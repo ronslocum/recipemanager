@@ -2,6 +2,18 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   get '/home', to: 'pages#home'
+  
+  #get '/recipes', to: 'recipes#index'
+  #get '/recipes/new', to: 'recipes#new', as: 'new_recipe'
+  #post '/recipes', to: 'recipes#create'
+  #get '/recipes/:id/edit', to: 'recipes#edit'
+  #patch '/recipes/:id', to: 'recipes#update'
+  #get '/recipes/:id', to: 'recipes#show'
+  #delete '/recipes/:id', to: 'recipes#destroy'
+ 
+  #everything commented out above is created by the one line below
+  resources :recipes
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
