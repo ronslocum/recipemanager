@@ -23,6 +23,18 @@ Things you may want to cover:
 
 * ...
 
+* Testing Specs for Recipes
+Name: String
+Summary: Text
+Description: Text
+
+ - Name must be present
+ - Name must be between 5 chars and less than 100 chars
+ - Summary must be present
+ - Summary must be between 10 chars and less than 150 chars
+ - Description must be present
+ - Description must be between 20 and 500 chars
+ - chef_id must be present
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
