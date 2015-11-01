@@ -39,6 +39,6 @@ class RecipesController < ApplicationController
 
   private
     def recipe_params
-      params.require(:recipe).permit(:name, :summary, :description) #this white lists the parameters that can come through
+      params.require(:recipe).permit(:name, :summary, :description, :picture) #this white lists the parameters that can come through
     end
 end
