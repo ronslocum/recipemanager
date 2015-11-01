@@ -12,7 +12,13 @@ Rails.application.routes.draw do
   #delete '/recipes/:id', to: 'recipes#destroy'
  
   #everything commented out above is created by the one line below
-  resources :recipes
+  resources :recipes do
+    member do
+      post 'like'
+    end
+  end
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
