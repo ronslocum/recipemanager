@@ -36,5 +36,22 @@ Description: Text
  - Description must be between 20 and 500 chars
  - chef_id must be present
 
+* Chefs
+What we have already:
+- Chef model and validations
+- Chefs table with columns chefname and email
+
+What we need to do:
+- Add passwords to the chefs table so chefs can be authenticated and logged in
+- Use email as login creds, since email is unique
+- Ability to register new chefs to use the app
+- Ability to display chefs profile
+- Ability to list chefs using the app
+- Ability for chefs to log in and log out of the app
+- Restrict actions like create recipes, edit recipe and like features to logged in chefs only
+- Restricting edit of recipes by chefs who create the recipes
+
+
+
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
